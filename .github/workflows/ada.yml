@@ -19,6 +19,7 @@ jobs:
       run: >
         sudo apt-get update &&
         sudo apt-get install gnat gprbuild alire
+        alr toolchain set gnat_native
 
     - name: Build
       run: alr build
